@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 pacman -Sy --noconfirm --needed base-devel arm-none-eabi-gcc arm-none-eabi-gdb arm-none-eabi-binutils
-pacamn -Sy --noconfirm --needed openocd
+pacman -Sy --noconfirm --needed openocd
+git clone git@gitorious.org:uc-sdk/uc-sdk.git
+ln -s uc-sdk uC-sdk
 
 # Configure sshd for X11 forwarding
 if [[ ! -f /.sshd-x11-forward-done ]]; then
