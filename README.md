@@ -23,9 +23,7 @@ This is a development environment (based on Ubuntu 14.04) for a STM32F4 board, f
   * remove the old one : `sudo apt-get remove vagrant`
   * open the .deb with ubuntu software center and install it
 
- * You should add your user to the `vboxusers` group to access the USB with the vagrant image : 
-
-  $ sudo usermod -aG vboxusers <your username>
+ * You should add your user to the `vboxusers` group to access the USB with the vagrant image: `sudo usermod -aG vboxusers <your username>`
 
 # Usage
 
