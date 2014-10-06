@@ -15,6 +15,17 @@ This is a development environment (based on Ubuntu 14.04) for a STM32F4 board, f
 	$ cd stm32f4-vagrant
 	$ vagrant up
 
+# Ubuntu 14.04 instructions
+
+ * Vagrant version in the repository is old, thus you should use the vagrant .deb provided [here](https://www.vagrantup.com/downloads)
+
+ * If you don't know how to install .deb packages :
+  * remove the old one : `sudo apt-get remove vagrant`
+  * open the .deb with ubuntu software center and install it
+
+ * You should add your user to the `vboxusers` group to access the USB with the vagrant image : 
+
+  $ sudo usermod -aG vboxusers <your username>
 
 # Usage
 
