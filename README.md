@@ -49,8 +49,14 @@ To reload the program, use:
 	(gdb) load
 	(gdb) continue
 
+Thus, you will need 3 ssh open (with `vagrant ssh`). If you don't want this, you can use byobu (installed in the image) : 
+ * `vagrant ssh` to log in the box
+ * `byobu` to create a new byobu session
+ * `Ctrl-a n` to create a new window
+ * `F8` to rename current window
+ * `Ctrl-a i` to go the window `i`
+
 To stop playing, quit gdb, openocd, and halt the virtual machine in the host.
 
 	$ vagrant halt
-
 
