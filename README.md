@@ -15,6 +15,15 @@ This is a development environment (based on Ubuntu 14.04) for a STM32F4 board, f
 	$ cd stm32f4-vagrant
 	$ vagrant up
 
+# Ubuntu 14.04 instructions
+
+ * Vagrant version in the repository is old, thus you should use the vagrant .deb provided [here](https://www.vagrantup.com/downloads)
+
+ * If you don't know how to install .deb packages :
+  * remove the old one : `sudo apt-get remove vagrant`
+  * open the .deb with ubuntu software center and install it
+
+ * You should add your user to the `vboxusers` group to access the USB with the vagrant image: `sudo usermod -aG vboxusers <your username>`
 
 # Usage
 
@@ -40,8 +49,14 @@ To reload the program, use:
 	(gdb) load
 	(gdb) continue
 
+Thus, you will need 3 ssh open (with `vagrant ssh`). If you don't want this, you can use byobu (installed in the image) : 
+ * `vagrant ssh` to log in the box
+ * `byobu` to create a new byobu session
+ * `Ctrl-a n` to create a new window
+ * `F8` to rename current window
+ * `Ctrl-a i` to go the window `i`
+
 To stop playing, quit gdb, openocd, and halt the virtual machine in the host.
 
 	$ vagrant halt
-
 
