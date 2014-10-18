@@ -13,4 +13,5 @@ wget https://raw.githubusercontent.com/oin/stm32f4-vagrant/master/.bashrc  -O /h
 ln -s /vagrant/src /tp/src
 chown -R vagrant /tp
 chgrp -R vagrant /tp
-echo "The dev environment is at /tp. The source file is /tp/src/test.c.
+echo "The dev environment is at /tp. The source file is /tp/src/test.c."
+
