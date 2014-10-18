@@ -8,8 +8,8 @@ mkdir /tp
 git clone https://gitorious.org/uc-sdk/uc-sdk.git /tp/uC-sdk
 
 #wget http://thomaspietrzak.com/enseignement/NIHM/Makefile -O /tp/Makefile
-wget https://raw.githubusercontent.com/ice3/stm32f4-vagrant/master/Makefile -O /tp/Makefile
-wget https://raw.githubusercontent.com/ice3/stm32f4-vagrant/master/.bashrc  -O /home/vagrant/.bashrc
+wget https://raw.githubusercontent.com/oin/stm32f4-vagrant/master/Makefile -O /tp/Makefile
+wget https://raw.githubusercontent.com/oin/stm32f4-vagrant/master/.bashrc  -O /home/vagrant/.bashrc
 ln -s /vagrant/src /tp/src
 chown -R vagrant /tp
 chgrp -R vagrant /tp

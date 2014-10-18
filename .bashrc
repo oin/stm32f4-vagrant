@@ -122,3 +122,5 @@ if [ $? -ne 0 ]; then
 else
         printf "ST_LINK is plugged\n Go go go !" | cowsay | lolcat
 fi
+
+cd /tp
