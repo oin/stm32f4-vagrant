@@ -18,7 +18,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	  vb.customize ["modifyvm", :id, "--cpuexecutioncap", "90"]
 	  vb.customize ["modifyvm", :id, "--cpus", 1]
 	  vb.customize ['modifyvm', :id, '--usb', 'on']
-	  vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'STM32Link', '--vendorid', '0x0483', '--productid', '0x3748']
+    vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'STM32Link', '--vendorid', '0x0483', '--productid', '0x3748']
+    vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'STM32F407', '--vendorid', '0x0483', '--productid', '0x5740']
+    vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'STM32F407 DFU', '--vendorid', '0x0483', '--productid', '0xdf11']
   end
 
   # Disable automatic box update checking. If you disable this, then
